@@ -1,2 +1,2 @@
-# mini-schema
+# tiny-schema
 A minimalistic JSON validator

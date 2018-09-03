@@ -11,6 +11,7 @@ const testRegexp = (regexp, passes, fails) => specify(regexp, function () {
 describe('ranges', function () {
 	testRegexp('//', ['hello', ''], []);
 	testRegexp('/(?:)/', ['hello', ''], []);
+	testRegexp('/123/', ['123', 'a123b'], ['1', 123, '']);
 	testRegexp('/hello/', ['hello', 'ahellob'], ['h', 'hellO', '']);
 	testRegexp('/hello/i', ['hello', 'ahellob', 'hellO'], ['h', '']);
 	testRegexp('/hell[oO]/', ['hello', 'ahellob', 'hellO'], ['h', '']);

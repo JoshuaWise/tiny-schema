@@ -97,7 +97,7 @@ is('/^\\w+$/i')('not a word'); // => false
 is('/^\\w+$/i')('word'); // => true
 ```
 
-Well if I can get specific about strings, I should be able to get specific about numbers too.
+What if I need to get specific about which *numbers* I accept?
 
 ```js
 is('100-200')(150); // => true
@@ -107,7 +107,7 @@ is('100-200')(150.5); // => false (no fractions in an integer range)
 is('100.0-200.0')(150.5); // => true (now it accepts fractions)
 ```
 
-Enums are nice. Let's use those too.
+Enums are nice. Let's use those.
 
 ```js
 is('"foo"|"bar"|500|false')('foo'); // => true

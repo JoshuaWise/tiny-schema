@@ -171,6 +171,12 @@ is('any')({}); // => true
 is('any')(null); // => true
 ```
 
+## Installation
+
+```
+npm install --save tiny-schema
+```
+
 ## Limitations
 
 The purpose of `tiny-schema` is to enable powerful JSON validation with minimal code use. Because of its terse syntax, typical validator functions can be created in less than one line of code. However, `tiny-schema` is not a replacement for [JSON Schema](http://json-schema.org/).
@@ -184,9 +190,3 @@ Unlike JSON Schema, `tiny-schema` cannot...
 - use [JSON Pointers](http://json-schema.org/latest/relative-json-pointer.html) to implement [dependent types](https://en.wikipedia.org/wiki/Dependent_type)
 
 `tiny-schema` should be seen as an easy-to-use JSON type checker on steroids—not an all-purpose, fully-featured JSON typing system.
-
-## Installation
-
-```
-npm install --save tiny-schema
-```

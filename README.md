@@ -1,5 +1,7 @@
 # tiny-schema
 
+An easy-to-use JSON type checker on steroids.
+
 ## Installation
 
 ```

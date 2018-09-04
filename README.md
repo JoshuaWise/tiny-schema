@@ -71,7 +71,7 @@ is('{string}')({ a: 'hello', b: 'world' }); // => true
 Nullable types? Might need those too.
 
 ```js
-is('[string?]?')(['foo']); // => true
+is('[string?]?')(['hello']); // => true
 is('[string?]?')([null]); // => true
 is('[string?]?')(null); // => true
 ```
@@ -110,16 +110,16 @@ is('100.0-200.0')(150.5); // => true (now it accepts fractions)
 Enums are nice. Let's use those.
 
 ```js
-is('"foo"|"bar"|500|false')('foo'); // => true
-is('"foo"|"bar"|500|false')('bar'); // => true
-is('"foo"|"bar"|500|false')(500); // => true
-is('"foo"|"bar"|500|false')(false); // => true
+is('"hello"|"world"|500|false')('hello'); // => true
+is('"hello"|"world"|500|false')('world'); // => true
+is('"hello"|"world"|500|false')(500); // => true
+is('"hello"|"world"|500|false')(false); // => true
 ```
 
 Can every single feature mentioned thus far be nested and used in every context? Yes? Oh, great.
 
 ```js
-is('true|{boolean|"foo"|[/^\w+$/i?]}|500.2-600.8|[[--integer]?]');
+is('true|{boolean|"hello"|[/^\w+$/i?]}|500.2-600.8|[[--integer]?]');
 ```
 
 Jesus, okay I'll stop now.

@@ -1,6 +1,6 @@
 # tiny-schema
 
-It's like `typeof`, but as a function.
+It's like `typeof`, but it's a function.
 
 ```js
 const schema = require('tiny-schema');

@@ -65,7 +65,7 @@ Validating deep structures could be useful...
 
 ```js
 is('[integer]')([-5, 0, 5]); // => true
-is('{string}')({ foo: 'bar' }); // => true
+is('{string}')({ a: 'hello', b: 'world' }); // => true
 ```
 
 Nullable types? Might need those too.

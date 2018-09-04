@@ -8,17 +8,17 @@ const testRegexp = (regexp, passes, fails) => specify(regexp, function () {
 	for (const value of fails) expect(schema(value)).to.be.false;
 });
 
-describe('ranges', function () {
-	testRegexp('//', ['hello', ''], []);
-	testRegexp('/(?:)/', ['hello', ''], []);
-	testRegexp('/123/', ['123', 'a123b'], ['1', 123, '']);
-	testRegexp('/hello/', ['hello', 'ahellob'], ['h', 'hellO', '']);
-	testRegexp('/hello/i', ['hello', 'ahellob', 'hellO'], ['h', '']);
-	testRegexp('/hell[oO]/', ['hello', 'ahellob', 'hellO'], ['h', '']);
-	testRegexp('/^hell[oO]$/', ['hello', 'hellO'], ['h', 'ahellob', 'foo\nhello', '']);
-	testRegexp('/^hello/mi', ['hello', 'foo\nhello', 'hellO'], ['h', 'ahellob', '']);
-	testRegexp('/^hel//lo$/i', ['hel/lo', 'hEl/lo'], ['h', 'ahel/lob', 'hel//lo', 'hello', '']);
-	testRegexp('/^hel\\wlo$/', ['hel_lo', 'hel5lo'], ['h', 'ahel_lob', 'hel\\wlo', 'hel lo', '']);
+describe('regexps', function () {
+	testRegexp('//', ['hello', ''], [0, null]);
+	testRegexp('/(?:)/', ['hello', ''], [0, null]);
+	testRegexp('/123/', ['123', 'a123b'], ['1', 123, '', null]);
+	testRegexp('/hello/', ['hello', 'ahellob'], ['h', 'hellO', '', null]);
+	testRegexp('/hello/i', ['hello', 'ahellob', 'hellO'], ['h', '', null]);
+	testRegexp('/hell[oO]/', ['hello', 'ahellob', 'hellO'], ['h', '', null]);
+	testRegexp('/^hell[oO]$/', ['hello', 'hellO'], ['h', 'ahellob', 'foo\nhello', '', null]);
+	testRegexp('/^hello/mi', ['hello', 'foo\nhello', 'hellO'], ['h', 'ahellob', '', null]);
+	testRegexp('/^hel//lo$/i', ['hel/lo', 'hEl/lo'], ['h', 'ahel/lob', 'hel//lo', 'hello', '', null]);
+	testRegexp('/^hel\\wlo$/', ['hel_lo', 'hel5lo'], ['h', 'ahel_lob', 'hel\\wlo', 'hel lo', '', null]);
 	specify('[invalid regexp]', function () {
 		expect(() => compile(' /hello/')).to.throw(SyntaxError);
 		expect(() => compile('/hello/ ')).to.throw(SyntaxError);

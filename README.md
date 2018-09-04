@@ -11,7 +11,7 @@ is('string')('hello'); // => true
 is('boolean')(false); // => true
 ```
 
-But it understands the difference between an `object` and `null`.
+But it understands the difference between `object` and `null`.
 
 ```js
 is('object')({}); // => true
@@ -20,7 +20,7 @@ is('null')(null); // => true
 is('null')({}); // => false
 ```
 
-And it understands the difference between an `object` and an `array`.
+And it understands the difference between `object` and `array`.
 
 ```js
 is('array')([]); // => true

@@ -173,7 +173,7 @@ is('any')(null); // => true
 
 ## Limitations
 
-The purpose of `tiny-schema` is to provide powerful JSON validation with minimal code use. Because of its terse syntax, typical validator functions can be created in less than one line of code. However, `tiny-schema` is not a replacement for [JSON Schema](http://json-schema.org/).
+The purpose of `tiny-schema` is to provide powerful JSON validation with minimal code use. Because of its terse syntax, typical validations can be done in less than one line of code. However, `tiny-schema` is not a replacement for [JSON Schema](http://json-schema.org/).
 
 Unlike JSON Schema, `tiny-schema` cannot...
 

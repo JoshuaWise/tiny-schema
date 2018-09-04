@@ -1,6 +1,6 @@
 # tiny-schema
 
-An easy-to-use JSON type checker on steroids.
+An easy-to-use JSON type validator on steroids.
 
 ## Installation
 

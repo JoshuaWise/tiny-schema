@@ -1,4 +1,4 @@
-# tiny-schema
+# tiny-schema [![Build Status](https://travis-ci.org/JoshuaWise/tiny-schema.svg?branch=master)](https://travis-ci.org/JoshuaWise/tiny-schema)
 
 It's like `typeof`, but it's a function.
 

@@ -173,7 +173,7 @@ is('any')(null); // => true
 
 ### Reusing validators
 
-Since `tiny-schema` spawns functions, they can be reused without needing to parse the schema string more than once.
+The functions spawned by `tiny-schema` can be reused without needing to parse the schema string more than once.
 
 ```js
 const isValid = is('{string}');

@@ -171,6 +171,17 @@ is('any')({}); // => true
 is('any')(null); // => true
 ```
 
+## Reusing validators
+
+Since `tiny-schema` spawns functions, they can be reused without needing to parse the schema string more than once.
+
+```js
+const isValid = is('{string}');
+
+isValid({ hello: 'world' }); // => true
+isValid({ hello: 5 }); // => false
+```
+
 ## Limitations
 
 The purpose of `tiny-schema` is to provide powerful JSON validation with minimal code use. Because of its terse syntax, typical validations can be done in less than one line of code. However, `tiny-schema` is not a replacement for [JSON Schema](http://json-schema.org/).

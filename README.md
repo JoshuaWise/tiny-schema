@@ -1,7 +1,5 @@
 # tiny-schema
 
-## Usage
-
 It's like `typeof`, but as a function.
 
 ```js

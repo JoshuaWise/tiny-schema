@@ -52,11 +52,11 @@ is('-number')(0); // => true
 And sometimes you might want to exclude those pesky zeros...
 
 ```js
-// Positive, non-zero
+// Positive
 is('++integer')(5); // => true
 is('++integer')(0); // => false
 
-// Negative, non-zero
+// Negative
 is('--integer')(-5); // => true
 is('--integer')(0); // => false
 ```

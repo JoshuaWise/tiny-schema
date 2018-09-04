@@ -1,13 +1,5 @@
 # tiny-schema
 
-An easy-to-use JSON type validator on steroids.
-
-## Installation
-
-```
-npm install --save tiny-schema
-```
-
 ## Usage
 
 It's like `typeof`, but as a function.
@@ -194,3 +186,9 @@ Unlike JSON Schema, `tiny-schema` cannot...
 - use [JSON Pointers](http://json-schema.org/latest/relative-json-pointer.html) to implement [dependent types](https://en.wikipedia.org/wiki/Dependent_type)
 
 `tiny-schema` should be seen as an easy-to-use JSON type checker on steroids—not an all-purpose, fully-featured JSON typing system.
+
+## Installation
+
+```
+npm install --save tiny-schema
+```

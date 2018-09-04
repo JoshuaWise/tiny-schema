@@ -83,7 +83,7 @@ is('number|string')('hello'); // => true
 is('number|string')(-123); // => true
 ```
 
-Nested algebraic data types within a nullable object? Oh I can validate that with one line of code.
+Nested algebraic data types within a nullable object? Oh I can validate that in one line of code.
 
 ```js
 is('{integer|boolean}?')({ a: -123, b: true }); // => true

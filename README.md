@@ -68,12 +68,6 @@ is('[integer]')([-5, 0, 5]); // => true
 is('{string}')({ foo: 'bar' }); // => true
 ```
 
-Might as well go crazy with the nesting...
-
-```js
-is('[{[[boolean]]}]')([{ foo: [[true, false], [false], []] }]); // => true
-```
-
 Nullable types? Might need those too.
 
 ```js

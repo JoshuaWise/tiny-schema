@@ -5,9 +5,9 @@ It's like `typeof`, but it's a function.
 ```js
 const is = require('tiny-schema');
 
-is('number')(123); // => true
-is('number')('123'); // => false
-is('string')('123'); // => true
+is('number')(5); // => true
+is('number')('hello'); // => false
+is('string')('hello'); // => true
 is('boolean')(false); // => true
 ```
 

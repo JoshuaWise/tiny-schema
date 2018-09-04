@@ -171,7 +171,7 @@ is('any')({}); // => true
 is('any')(null); // => true
 ```
 
-## Reusing validators
+### Reusing validators
 
 Since `tiny-schema` spawns functions, they can be reused without needing to parse the schema string more than once.
 

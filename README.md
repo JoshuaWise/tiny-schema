@@ -38,9 +38,12 @@ is('integer')(5.5); // => false
 And since it knows integers, why not go further?
 
 ```js
+// Positive
 is('+integer')(-5); // => false
 is('+integer')(5); // => true
 is('+integer')(0); // => true
+
+// Negative
 is('-number')(-5.5); // => true
 is('-number')(5.5); // => false
 is('-number')(0); // => true
@@ -49,8 +52,11 @@ is('-number')(0); // => true
 And sometimes you might want to exclude those pesky zeros...
 
 ```js
+// Positive, non-zero
 is('++integer')(5); // => true
 is('++integer')(0); // => false
+
+// Negative, non-zero
 is('--integer')(-5); // => true
 is('--integer')(0); // => false
 ```

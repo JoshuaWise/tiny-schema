@@ -97,7 +97,7 @@ is('/^\\w+$/i')('not a word'); // => false
 is('/^\\w+$/i')('word'); // => true
 ```
 
-What if I need to get specific about which *numbers* I accept?
+What if I need to get specific about which numbers I accept?
 
 ```js
 is('100-200')(150); // => true

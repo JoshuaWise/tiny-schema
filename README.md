@@ -126,7 +126,7 @@ Jesus, okay I'll stop now.
 
 ### Escaping string literals
 
-String literals can be created by using `""`, `''`, or ` `` `. Each form is practically equivalent. The only difference is that each form's respective quote character must be escaped when referred to literally. Escaping is done by using two quotes in direct succession.
+String literals can be created by using `""`, `''`, or ` `` `, and each form is practically equivalent. The only difference is that each form's respective quote character must be escaped when referred to literally. Escaping is done by using two quotes in direct succession.
 
 ```js
 is('"The cow said ""moo""."')('The cow said "moo".'); // => true
